@@ -1,0 +1,16 @@
+// language neutral schema and definitions
+// based on language, need to convert file to be used in a language
+// proto c is a protobuf compiler that will output the file needed for the language
+syntax = "proto3";
+
+// single employee object
+message Employee {
+    int32 id = 1; // serialization sequece
+    string name = 2;
+    float salary = 3;
+}
+
+// an array of Employee
+message Employees {
+    repeated Employee employees = 1; // create var employees as type Employee and all to repeat
+}
